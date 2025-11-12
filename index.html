@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keerthi Chandana Bobbala — Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#4f46e5;--muted:#6b7280;}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; color:#111827;}
+    .hero{min-height:60vh;display:flex;align-items:center}
+    .bg-accent{background:linear-gradient(135deg, rgba(79,70,229,0.09), rgba(99,102,241,0.04));}
+    .skill-badge{border-radius:999px;padding:6px 10px;background:#f3f4f6;margin:4px;display:inline-block;font-weight:600}
+    .project-card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(15,23,42,0.06);transition:all .25s}
+    .nav-link.active{color:var(--accent) !important;font-weight:700}
+    footer{border-top:1px solid #e6e6e6}
+    .in-progress{border-left:5px solid #22c55e;background:linear-gradient(135deg,#f0fdf4,#f9fafb);}
+    @media (prefers-color-scheme:dark){body{background:#0b1220;color:#d6d9de} .bg-accent{background:linear-gradient(135deg, rgba(79,70,229,0.08), rgba(99,102,241,0.03));}}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Keerthi Chandana</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero bg-accent">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-bold">Hi — I’m <span style="color:var(--accent)">Keerthi Chandana</span></h1>
+          <p class="lead mt-3">Aspiring Full Stack Developer building creative frontends and practical backend logic. I turn ideas into responsive web apps and interactive user experiences.</p>
+          <p class="mt-2 text-success fw-semibold">🚀 Currently building: AI Health Assistant (React.js + Python + NLP)</p>
+          <div class="mt-4">
+            <a class="btn btn-primary me-2" href="#projects">View Projects</a>
+            <a class="btn btn-outline-secondary me-2" href="mailto:bobbalakchandana@gmail.com">Contact Me</a>
+            <a class="btn btn-success" href="KeerthiChandanaBobbala_Resume.pdf" download>Download Resume</a>
+          </div>
+          <div class="mt-4 text-white small">
+            <strong>Location:</strong> Hyderabad, Telangana • <strong>Email:</strong> bobbalakchandana@gmail.com
+          </div>
+        </div>
+        <div class="col-lg-5 text-center d-none d-lg-block">
+          <div class="card p-3 shadow-sm" style="border-radius:18px;">
+            <img src="https://via.placeholder.com/300x300.png?text=Keerthi" alt="Keerthi" class="img-fluid rounded-circle mb-3" style="max-width:220px">
+            <h5 class="mb-1">Keerthi Chandana Bobbala</h5>
+            <div class="text-muted small">Full Stack Developer (Aspiring)</div>
+            <div class="mt-3">
+              <a class="btn btn-sm btn-outline-primary me-2" href="https://github.com/keerthiBobbala" target="_blank">GitHub</a>
+              <a class="btn btn-sm btn-outline-secondary" href="https://www.linkedin.com/in/keerthibobbala" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <section id="about" class="container mb-5">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <h3>About</h3>
+          <p>I’m an undergraduate Computer Science student at ICFAI Tech Hyderabad (2022–2026) with hands-on experience building responsive frontends and small backend integrations. I enjoy building web tools, interactive experiences, and learning new frameworks and best practices.</p>
+
+          <h5 class="mt-4">Education</h5>
+          <ul>
+            <li><strong>B.Tech — Computer Science & Engineering</strong>, ICFAI Tech Hyderabad (2022–2026) — CGPA: 8.57</li>
+            <li><strong>Intermediate</strong>, Sri Chaitanya Junior College — 97.8%</li>
+            <li><strong>10th Standard</strong>, Vasishta Vidyalaya — GPA: 10</li>
+          </ul>
+
+          <h5 class="mt-4">Skills</h5>
+          <div class="text-black">
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">React.js</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">NLP</span>
+            <span class="skill-badge">PHP</span>
+            <span class="skill-badge">MySQL</span>
+            <span class="skill-badge">Git & GitHub</span>
+            <span class="skill-badge">VS Code</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card p-3 shadow-sm">
+            <h6 class="mb-2">Quick Facts</h6>
+            <p class="small mb-1"><strong>Certifications:</strong> AWS Academy Graduate, Nxtwave Web & DB courses</p>
+            <p class="small mb-1"><strong>Internship:</strong> Frontend Developer — South Central Railways (IT Unit), Jun–Aug 2024</p>
+            <p class="small mb-0"><strong>Languages:</strong> English, Telugu</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3>Projects</h3>
+        <div class="small text-muted">Tech: HTML, CSS, JavaScript, React.js, Python, NLP</div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- AI Health Assistant -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 p-3 in-progress">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-success">AI Health Assistant 🤖 (In Progress)</h5>
+              <p class="card-text small text-muted">
+                Building an intelligent health assistant using <strong>React.js</strong>, 
+                <strong>Python</strong>, and <strong>Natural Language Processing (NLP)</strong>. 
+                The system converses with users, understands health-related symptoms, 
+                and provides smart insights and guidance.
+              </p>
+              <ul class="small text-muted">
+                <li>React.js frontend with chatbot UI</li>
+                <li>Python Flask backend for NLP processing</li>
+                <li>Integrating Hugging Face transformers for symptom analysis</li>
+              </ul>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-sm btn-outline-success disabled">In Development</a>
+                <span class="small text-muted">2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NextGen Travel -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 p-3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-success">NextGen Travel</h5>
+              <p class="card-text small text-muted">AI-powered travel booking with chatbot & voice search. Multi-page routing and local storage for session data.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="https://github.com/keerthiBobbala/NextGenTravel" target="_blank" class="btn btn-sm btn-outline-primary">Code</a>
+                <span class="small text-muted">April 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Maker -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 p-3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Button Maker</h5>
+              <p class="card-text small text-muted">Custom button generator with live preview using DOM manipulation and Bootstrap for responsiveness.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="https://github.com/keerthiBobbala/Button-Maker" target="_blank" class="btn btn-sm btn-outline-primary">Code</a>
+                <span class="small text-muted">Tool</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guessing Game -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 p-3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Interactive Guessing Game</h5>
+              <p class="card-text small text-muted">Responsive number-guessing app with dynamic feedback and event-driven logic.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="https://github.com/keerthiBobbala/Brain-Teaser" target="_blank" class="btn btn-sm btn-outline-primary">Code</a>
+                <span class="small text-muted">Fun</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CIMS -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 p-3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">CIMS — Coach Information Management Systems</h5>
+              <p class="card-text small text-muted">Responsive frontend screens for South Central Railways using Bootstrap, PHP integration for backend flows.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-sm btn-outline-primary disabled">Internal</a>
+                <span class="small text-muted">Internship</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="experience" class="container mb-5">
+      <h3>Experience</h3>
+      <div class="timeline mt-3">
+        <div class="card p-3 mb-3">
+          <h5 class="mb-1">Intern — South Central Railways (IT Unit)</h5>
+          <div class="small text-muted mb-2">Frontend Developer — June 2024 to August 2024</div>
+          <ul>
+            <li>Built responsive UI screens using HTML, CSS, Bootstrap and JavaScript.</li>
+            <li>Assisted in backend integration using PHP and Node.js to connect data flows.</li>
+            <li>Improved user interactions and accessibility across internal tools.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h5 class="mt-4">Certifications</h5>
+      <ul>
+        <li>AWS Academy Graduate</li>
+        <li>Multiple Nxtwave courses: Databases, Static & Responsive Web Development, Dynamic Web Apps</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Get in touch</h3>
+          <p>If you'd like to work together or see more of my work, drop a message — I usually reply within a few days.</p>
+          <p><strong>Email:</strong> <a href="mailto:bobbalakchandana@gmail.com">bobbalakchandana@gmail.com</a></p>
+          <p>
+            <a class="btn btn-outline-primary me-2" href="https://github.com/keerthiBobbala" target="_blank">GitHub</a>
+            <a class="btn btn-outline-secondary" href="https://www.linkedin.com/in/keerthibobbala" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h6 class="mb-3">Quick contact</h6>
+            <form onsubmit="return submitForm(event)">
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input class="form-control" required id="name" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input class="form-control" type="email" required id="email" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="3" required id="message"></textarea>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary">Send (opens email)</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 bg-white mt-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="small text-muted">© 2025 Keerthi Chandana • Built with HTML, CSS & Bootstrap</div>
+      <div>
+        <a class="me-3 small" href="KeerthiChandanaBobbala_Resume.pdf" download>Download Resume</a>
+        <a class="small" href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function submitForm(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value;
+      const email=document.getElementById('email').value;
+      const message=document.getElementById('message').value;
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + "\\nEmail: " + email + "\\n\\n" + message);
+      window.location.href = `mailto:bobbalakchandana@gmail.com?subject=${subject}&body=${body}`;
+      return false;
+    }
+
+    const sections = document.querySelectorAll('main section, header');
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', ()=>{
+      let current = '';
+      sections.forEach(sec=>{
+        const top = sec.offsetTop - 120;
+        if(pageYOffset >= top) current = sec.id;
+      });
+      navLinks.forEach(link=>{
+        link.classList.remove('active');
+        if(link.getAttribute('href') === ('#'+current)) link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
